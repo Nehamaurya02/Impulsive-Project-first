@@ -1,0 +1,122 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin:20px 0px;
+}
+.container{
+    min-height:600px;
+    height:auto;
+    width: 80%;
+    background:rgb(227, 225, 225);
+    margin:0px auto;
+    color:pink;
+    padding:100px 0px;
+    box-sizing: border-box;
+    // display:flex;
+    // flex-direction: row;
+    .container-box{
+        min-height:400px;
+        width:80%;
+        margin:0px auto;
+        background:#fff;
+        display:flex;
+        flex-direction: row;
+        position: relative;
+        .logo{
+            height:400px;
+            display:flex;
+            flex-direction: row;
+            flex-basis: 50%;
+            align-items:center;
+            padding:17% 5%;
+            box-sizing: border-box;
+            background:white;
+            // @media screen and (min-width:768px) {
+            //     .logo{
+            //     flex-direction: column;
+            //     }
+            //   }
+
+            .logo-img{
+                height:60px;
+                width:60px;
+                border-radius: 50%;
+                margin: 0px auto;
+            }
+            .content{
+                padding:0% 5%;
+                color:black;
+                .content-web{
+                    font-size:2rem;
+                    font-weight: bold;
+                }
+            }
+        }
+        .devider{
+            position: absolute;
+            top:12%;
+            left:50%;
+            height:300px;
+            width:0px;
+            border:1px solid rgb(209, 208, 210);
+        }
+        .form{
+            height:400px;
+            flex-basis: 50%;
+            padding:50px 30px;
+            box-sizing: border-box;
+            // background:gray;
+            .portel{
+                color:black;
+                font-size:23px;
+                font-weight: 700;
+            }
+            input{
+                height:45px;
+                width:80%;
+                border:1px solid rgb(193, 190, 190);
+                border-radius:5px;
+                margin:5%;
+                color:gray;
+                padding-left:20px;
+                box-sizing: border-box;
+            }
+            button{
+               @extend input;
+                background:#f99e24;
+                color:white;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container .container-box{
+     flex-direction: column;
+    }
+    .container .container-box .devider{
+        height:0px;
+        width:80%;
+        top:35%;
+        left:10%;
+    }
+
+  }
+
+  @media screen and (max-width:576px) {
+    .container{
+        padding:40px 0px;
+    }
+    .container .container-box{
+        width:90%;
+    }
+    .container .container-box .form input {
+        width:100%;
+        padding-left:3%;
+    }
+  }

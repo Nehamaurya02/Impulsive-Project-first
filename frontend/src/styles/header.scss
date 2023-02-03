@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600&family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,700;0,900;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+$gray:#F2F3F7;
+$white:#FFFFFF;
+.container{
+    width:100%;
+    position:relative;
+    .head{
+        width:100%;
+        padding:49px 34px;
+        border-bottom: 1px solid #F2F3F7;
+        position:absolute;
+        top:0px;
+        left:0px;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+        .logo{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content:space-between;
+            .logo-container{
+                height:21.44px;
+                width:147px;
+                display:flex;
+                flex-direction: row;
+                .logo{
+                    height: 100%;width:100%;
+                }
+            }
+            .line{
+                width: 0px;
+                height: 30px;
+                border: 0.5px solid rgba(181, 181, 183, 0.5);
+                flex: none;
+            }
+                .button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 7.01754px 14.0351px;
+                    gap: 8.77px;
+                    width:75.07px;
+                    background:#fff9ef;
+                } 
+            }
+            .image{
+                height:54px;
+                width:54px;
+                border-radius: 50%;
+                img{
+                    height:54px;
+                    width:54px;
+                    border-radius: 50%;
+                }
+            }
+        }    
+        }
+

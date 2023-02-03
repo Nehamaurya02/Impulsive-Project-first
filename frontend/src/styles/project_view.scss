@@ -1,0 +1,165 @@
+$gray:rgb(220, 217, 217);
+$white:white;
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.container{
+    min-height:700px;
+    width:90%;
+    background:$gray;
+    margin:26px auto;
+    .head{
+        min-height:70px;
+        height:auto;
+        width:100%;
+        border-bottom: 1px solid rgb(248, 246, 246);
+        display: flex;
+        flex-direction:row;
+        .logo{
+            min-height:70px;
+            height:auto;
+            flex-basis: 30%;
+            padding:1% 2%;
+            box-sizing: border-box;
+            display:flex;
+            flex-direction: row;
+              .logo-img{
+                height:50px;
+                width:50px;
+                border-radius:50%;
+            }
+            .logo-cant{
+                height:100%;
+                width:45%;
+                font-size:1.5rem;
+                font-weight: 700;
+                line-height:50px;
+                text-align: center;
+            }
+            .logo-emp{
+                height:80%;
+                width:35%;
+                text-align: center;
+                line-height: 40px;
+                background:#c5bbae;
+                border-radius:5px;
+            }
+        }
+    }
+    .container-fluid{
+        min-height:630px;
+        height:auto;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        .side{
+            min-height:630px;
+            height:auto;
+            flex-basis:7%;
+            padding:5% 0.7%;
+            box-sizing: border-box;
+            border-right: 1px solid rgb(248, 246, 246);
+            .icon{
+                height:50px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom:50%;
+                color:rgb(159, 157, 157);
+                font-size: 1.6rem;
+            }
+        }
+        .container-content{
+            min-height:100%;
+            height:auto;
+            flex-basis:93%;
+            padding:4%;
+            p{
+                color:rgb(178, 140, 146);
+            }
+            .card-box{
+                min-height:170px;
+                height:auto;
+                width:100%;
+                display: flex;
+                flex-direction: row;
+                margin-bottom:3%;
+                .card{
+                    height:150px;
+                    flex-basis: 30%;
+                    background:rgb(194, 192, 192);
+                    margin:2% auto;   
+                    border-radius: 5px; 
+                    padding:2%;
+                    p{
+                        color:rgb(178, 140, 146);
+                        margin-bottom:15%;
+                    }  
+                    
+                    b{
+                        font-size:2rem;
+                        color:rgb(142, 94, 102);
+                    }           
+                }
+            }
+            .project-ongoing{
+                @extend .card-box;
+                min-height:230px;
+                .card-ongoing{
+                    @extend .card;
+                    min-height:170px;
+                    border:2px solid rgb(173, 172, 172);
+                    background:$gray;
+                    p{
+                        color:rgb(178, 140, 146);
+                        margin-bottom:0%;
+                    }  
+                    button{
+                        margin-bottom: 10%;
+                        border:none;
+                        border-radius:3px;
+                        padding:1%;
+                    }
+                    .btn1{
+                        color:#be812e;
+                        background:#daccb9; 
+                        margin-left:3%;
+                    }
+                    .btn2{
+                         color:#7336c2;
+                         background:#c5b3dd;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container .head .logo{
+        flex-basis: 100%;
+    }
+}
+@media screen and (max-width:576px) {
+    
+    .container .container-fluid{
+        flex-direction: column;
+    }
+    .container .container-fluid .side{
+        flex-basis:100%;
+    }
+    .container .container-fluid .container-content{
+    flex-basis:100%;
+    }
+    .container .container-fluid .side .icon{
+    height: 136px;
+    margin-bottom:0%;
+    font-size: 4.6rem;
+    }
+}
+
+
